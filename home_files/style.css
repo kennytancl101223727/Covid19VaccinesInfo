@@ -8,6 +8,9 @@
 
 .heading{
     width: 100%;
+    font-family: Segoe, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .footer { 
@@ -23,4 +26,12 @@ footer {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.nav-item{
+    font-family: Segoe, sans-serif;
+}
+
+#content{
+    font-weight: bold;
 }
