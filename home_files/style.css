@@ -12,21 +12,6 @@
     font-size: 35px;
 }
 
-.footer { 
-    margin-top: 50px;
-    height: 50px;
-    position: relative;
-}
-
-footer {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
 .nav-item{
     font-family: Segoe, sans-serif;
     letter-spacing: 1px;
@@ -60,4 +45,37 @@ footer {
     border-radius: 50px;
     border: 10px double rgb(95, 95, 95);
     background-color: rgb(231, 231, 231);
+}
+
+footer{ 
+    margin-top:50px;
+    height: 300px;
+    padding-top: 20px;
+}
+
+
+#footer_table{
+    display:block;
+    width: 90%;
+    height:90%;
+    padding-left: 10%;
+}
+
+#footer_table th{
+    width: 43%;
+    text-align:left;
+}
+
+#footer_table td{
+    text-align:left;
+    height: 35px;
+}
+
+footer p{
+    margin-bottom:0px;
+    width: 100%;
+}
+
+#footer_table td a:hover{
+    color:black;
 }
