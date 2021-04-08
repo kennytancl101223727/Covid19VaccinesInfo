@@ -9,7 +9,6 @@
 .heading{
     width: 100%;
     font-family: Segoe, sans-serif;
-    font-weight: bold;
     font-size: 35px;
 }
 
@@ -30,10 +29,7 @@ footer {
 
 .nav-item{
     font-family: Segoe, sans-serif;
-}
-
-#content{
-    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .disclaimer-container{
@@ -51,4 +47,17 @@ footer {
 
 .disclaimer-container p {
     font-size: 15px;
+}
+
+.nav-item{
+    font-family: Segoe, sans-serif;
+    letter-spacing: 1px;
+}
+
+.open{
+    padding: 20px 40px;
+    font-weight: bolder;
+    border-radius: 50px;
+    border: 10px double rgb(95, 95, 95);
+    background-color: rgb(231, 231, 231);
 }
