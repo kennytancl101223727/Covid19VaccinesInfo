@@ -9,7 +9,6 @@
 .heading{
     width: 100%;
     font-family: Segoe, sans-serif;
-    font-weight: bold;
     font-size: 35px;
 }
 
@@ -30,8 +29,13 @@ footer {
 
 .nav-item{
     font-family: Segoe, sans-serif;
+    letter-spacing: 1px;
 }
 
-#content{
-    font-weight: bold;
+.open{
+    padding: 20px 40px;
+    font-weight: bolder;
+    border-radius: 50px;
+    border: 10px double rgb(95, 95, 95);
+    background-color: rgb(231, 231, 231);
 }
