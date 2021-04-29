@@ -79,3 +79,21 @@ footer p{
 #footer_table td a:hover{
     color:black;
 }
+
+#register_button, #check_register_button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #006778;
+    color:white;
+    opacity: 0.75;
+    transition: 0.3s
+}
+
+#register_button:hover{
+    opacity: 1;
+}
+
+#check_register_button:hover{
+    opacity: 1;
+}
