@@ -79,3 +79,25 @@ footer p{
 #footer-table td a:hover{
     color:black;
 }
+
+h1{
+    width: 70vw;
+    text-align: left;
+    position: relative;
+}
+
+.register-buttons button{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    background-color: rgb(211, 211, 211);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px;
+}
+
+.register-buttons button:hover{
+    transition: ease-in 0.3s;
+    color: white;
+    background-color: rgb(77, 77, 77);
+    border: 2px solid rgb(0, 0, 0);
+}
