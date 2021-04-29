@@ -54,19 +54,19 @@ footer{
 }
 
 
-#footer_table{
+#footer-table{
     display:block;
     width: 90%;
     height:90%;
     padding-left: 10%;
 }
 
-#footer_table th{
+#footer-table th{
     width: 43%;
     text-align:left;
 }
 
-#footer_table td{
+#footer-table td{
     text-align:left;
     height: 35px;
 }
@@ -76,6 +76,6 @@ footer p{
     width: 100%;
 }
 
-#footer_table td a:hover{
+#footer-table td a:hover{
     color:black;
 }
