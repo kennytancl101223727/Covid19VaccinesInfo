@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <?php
+<?php
     // echo $_POST['input_name'];
     // echo '<br>';
     // echo $_POST['input_nric'];
@@ -21,7 +21,7 @@
         file_put_contents($_POST['input_nric'] . '.txt', $content_to_write);
         echo '<h3>Registration is successful!</h3>';
     }
-    ?>
+?>
    
 </body>
 </html>
