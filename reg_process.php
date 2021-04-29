@@ -9,12 +9,12 @@
     <?php
     // echo $_POST['input_name'];
     // echo '<br>';
-    // echo $_POST['input_nric'];    
-    if (file_exists($_POST['input_nric'] . '.txt')) {     
+    // echo $_POST['input_nric'];
+    if (file_exists($_POST['input_nric'] . '.txt')) {
         //Check for filename with given nric
-        echo '<h3>You are already registered!</h3>';
+        echo '<h3>You are already registered!</h3>'; 
     }
-    else {   
+    else {
         //filename not found, write to file        
         $content_to_write = "Name: " . $_POST['input_name'] . "\n";
         $content_to_write .= "NRIC: " . $_POST['input_nric'] . "\n";
