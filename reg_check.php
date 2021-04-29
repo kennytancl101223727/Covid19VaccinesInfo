@@ -1,29 +1,4 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
-<head>  
-    <title>MWE | Check</title>    
-</head>
-
-<body>
-<<<<<<< HEAD
-<?php
-    // echo $_POST['input_nric'];
-    if (file_exists($_POST['input_nric'] . '.txt')) {
-        echo '<h3>You are already registered!</h3>';
-    }
-    else {
-        echo '<h3>You have not registered!</h3><br>';
-        echo '<a href ="register.html">Register here</a>';
-    }
-?>
-=======
-    
-   
-</body>
-</html>
-
-<!DOCTYPE html>
 <html class="theme-cyan cdc-page-type-content cdc-2020" lang="en-us">
 
 <head>
@@ -170,7 +145,6 @@
             <p>&#169;2021 Development Project Tools 1 Group 7</p>
         </footer>
     </div>
->>>>>>> add-register-vaccination
    
 </body>
 </html>
