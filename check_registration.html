@@ -19,6 +19,8 @@
 </head>
 
 
+
+
 <body>
 
     <!-- Header Title -->
@@ -79,10 +81,10 @@
             <div class="col content">
                 <div class="container-fluid">
                     <div class="disclaimer-container">
-                        <form action="reg_check.php" method="post">
+                        <form action="reg_check.php" method="post" onsubmit= OnValidate()>
                             <h3>
                                 <label>NRIC:</label>
-                                <input type="text" name="input_nric"></input>
+                                <input type="text" name="input_nric" id="ic"></input>
                             </h3>
                             <br><br>
                             <button type="submit" id="check_register_button">Check</button>
@@ -91,9 +93,27 @@
                 </div>
             </div>
 
+            <script>
+                function OnValidate(){
+            
+                    var IC_Value = document.getElementById('ic');
+            
+                    if(IC_Value.length == 0){
+                        alert("Please enter your IC for checking registration!");
+                        return false;
+                    }else{
+                        return true;
+                    }
+                    
+            
+                }
+            </script>
+
         </div>
 
     </main>
+
+    
 
     <div class ="container-fluid site-title footer">
         <footer>
