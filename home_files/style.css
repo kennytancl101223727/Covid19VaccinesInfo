@@ -106,12 +106,16 @@ h1{
     color: black;
 }
 
+.register-buttons button.active{
+    background-color: rgb(114, 114, 114);
+    color: white;
+}
+
 .register-buttons button:hover{
     transition: ease-in 0.3s;
     text-decoration: none;
     color: white;
     background-color: rgb(77, 77, 77);
-    border: 2px solid rgb(0, 0, 0);
 }
 
 #register-button, #check-register-button{
