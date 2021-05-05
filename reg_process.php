@@ -23,11 +23,16 @@
     <!-- Header Title -->
     <div class="container-fluid site-title">
         <a href="home.html"><img src="images/logo.png" alt="Website logo"></a>
-    <!-- <div class=""> -->
         <div class="container ">
-            <div class="row">
-                <h3 class="heading">COVID-19 Vaccine Registration</h3>
+            <div class="team-number">
+                <h1>L1-team07</h1>
             </div>
+            <h3 class="heading">COVID-19 Vaccine Information</h3>
+            <div class="register-buttons">
+                <a href="register.html"><button>Register</button></a>
+                <a href="check_registration.html"><button>Check Registration</button></a>
+            </div>
+            <div class="row"></div>
         </div>
     </div>
 
@@ -41,7 +46,7 @@
                 <ul class="nav navbar-nav nav-justified w-100">
                   
                     <li class="nav-item" id="menu_home">
-                        <a class="nav-link active" href="home.html">
+                        <a class="nav-link" href="home.html">
                             Home</a>
                     </li>
 
@@ -70,31 +75,41 @@
         </div>
     </div>
 
-    <?php
+    <!-- Content details -->
+    <!-- Page Content Wrap -->
+    <div class="container d-flex flex-wrap body-wrapper bg-white">
+        <!-- Content -->
+        <main class="col-xl-9 order-xl-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-0 rounded-0">
+                        <div class="card-body bg-quaternary">
+                            <?php
+                                // echo'<div class="container-fluid">
+                                // <div class="disclaimer-container">';
+                                if (file_exists('data/'. $_POST['input_nric'] . '.txt')){     //Check for filename with given nric
+                                    echo '<h3>You have already registered!</h3>';
+                                } 
+                                else{   //filename not found, write to file
+                                    
+                                $content_to_write = "Name: " . $_POST['input_name'] . "\n";
+                                $content_to_write .= "NRIC: " . $_POST['input_nric'] . "\n";
+                                file_put_contents('data/'.$_POST['input_nric'] . '.txt', $content_to_write);
+                                echo '<h3>Registration is successful!</h3>';
+                                }
+                                // echo '</div>
+                                // </div>';
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 
-        echo'<div class="container-fluid">
-        <div class="disclaimer-container">';
-        
-        
-        if (file_exists('data/'. $_POST['input_nric'] . '.txt')){     //Check for filename with given nric
-            echo '<h3>You have already registered!</h3>';
-        } 
-        else{   //filename not found, write to file
-            
-           $content_to_write = "Name: " . $_POST['input_name'] . "\n";
-           $content_to_write .= "NRIC: " . $_POST['input_nric'] . "\n";
-           file_put_contents('data/'.$_POST['input_nric'] . '.txt', $content_to_write);
-           echo '<h3>Registration is successful!</h3>';
-        }
-
-        echo '</div>
-        </div>';
-
-    ?>
-
-<div class ="container-fluid site-title footer">
+    <div class ="container-fluid site-title footer">
         <footer>
-            <table id="footer_table">
+            <table id="footer-table">
                 <tr>
                     <th>
                         Enquiries

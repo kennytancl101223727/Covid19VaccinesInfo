@@ -1,2 +1,0 @@
-Name: John Smith
-NRIC: 233456667

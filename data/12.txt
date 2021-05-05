@@ -1,0 +1,2 @@
+Name: ken
+NRIC: 12

@@ -23,11 +23,16 @@
     <!-- Header Title -->
     <div class="container-fluid site-title">
         <a href="home.html"><img src="images/logo.png" alt="Website logo"></a>
-    <!-- <div class=""> -->
         <div class="container ">
-            <div class="row">
-                <h3 class="heading">COVID-19 Vaccine Registration</h3>
+            <div class="team-number">
+                <h1>L1-team07</h1>
             </div>
+            <h3 class="heading">COVID-19 Vaccine Information</h3>
+            <div class="register-buttons">
+                <a href="register.html"><button>Register</button></a>
+                <a href="check_registration.html"><button>Check Registration</button></a>
+            </div>
+            <div class="row"></div>
         </div>
     </div>
 
@@ -41,7 +46,7 @@
                 <ul class="nav navbar-nav nav-justified w-100">
                   
                     <li class="nav-item" id="menu_home">
-                        <a class="nav-link active" href="home.html">
+                        <a class="nav-link" href="home.html">
                             Home</a>
                     </li>
 
@@ -70,52 +75,36 @@
         </div>
     </div>
 
-    <!-- Content -->
-    <main class="col-xl-9 order-xl-2">
-
-        <div class="row">
-        
-            <div class="col content">
-                <div class="container-fluid">
-                    <div class="disclaimer-container">
-                        <form action="reg_process.php" method="post" onsubmit="return OnValidate()">
-                            <h3>
-                                <label>Name:</label>
-                                <input type="text" name="input_name"></input>
+    <!-- Content details -->
+    <!-- Page Content Wrap -->
+    <div class="container d-flex flex-wrap body-wrapper bg-white">
+        <!-- Content -->
+        <main class="col-xl-9 order-xl-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-0 rounded-0">
+                        <div class="card-body bg-quaternary">
+                            <form action="reg_process.php" method="post" onsubmit="return OnValidate()">
+                                <h3>
+                                    <label>Name:</label>
+                                    <input type="text" name="input_name"></input>
+                                    <br><br>
+                                    <label>NRIC:</label>
+                                    <input type="text" name="input_nric"></input>
+                                </h3>
                                 <br><br>
-                                <label>NRIC:</label>
-                                <input type="text" name="input_nric"></input>
-                            </h3>
-                            <br><br>
-                            <button type="submit" id="register_button">Register</button>
-                        </form> 
+                                <button type="submit" id="register_button">Register</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <script>
-                function OnValidate(){
-
-                    var NameValue = document.getElementsByTagName('input')[0].value;
-                    var IC_Value = document.getElementsByTagName('input')[1].value;
-
-                    if(NameValue.length == 0 || IC_Value.length == 0){
-                        alert("Please enter your name and IC for registration!");
-                        return false;
-                    }else{
-                        return true;
-                    }
-
-                }
-            </script>
-
-        </div>
-
-    </main>
+        </main>
+    </div>
    
     <div class ="container-fluid site-title footer">
         <footer>
-            <table id="footer_table">
+            <table id="footer-table">
                 <tr>
                     <th>
                         Enquiries
@@ -175,5 +164,20 @@
         </footer>
     </div>
 
+    <script>
+        function OnValidate(){
+
+            var NameValue = document.getElementsByTagName('input')[0].value;
+            var IC_Value = document.getElementsByTagName('input')[1].value;
+
+            if(NameValue.length == 0 || IC_Value.length == 0){
+                alert("Please enter your name and IC for registration!");
+                return false;
+            }else{
+                return true;
+            }
+
+        }
+    </script>
 </body>
 </html>
