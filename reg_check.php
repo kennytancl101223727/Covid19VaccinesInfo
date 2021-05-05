@@ -4,7 +4,7 @@
 <head>
     <!-- This is the file declaration and will not shown the browser webpage -->
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     
     <!-- Links to CSS -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="home_files/style.css">
     
     <!-- Website Title -->
-	<title>MWE | Register</title>
+    <title>MWE | Register</title>
     <meta name="description" content="">
-    <meta name="keywords" content="">	
+    <meta name="keywords" content="">
 </head>
 
 <body>
@@ -85,14 +85,12 @@
                     <div class="card border-0 rounded-0">
                         <div class="card-body bg-quaternary">
                             <?php
-                                if (file_exists('data/' . $_POST['input_nric'] . '.txt')){
-                                    echo '<h3>You are already registered!</h3>';
-                                }
-                                else{
-                                    echo '<h3>You have not registered!</h3><br>';
-                                    echo '<a href ="register.html">Register here</a>';
-                                }
-
+                            if (file_exists('data/' . $_POST['input_nric'] . '.txt')) {
+                                echo '<h3>You are already registered!</h3>';
+                            } else {
+                                echo '<h3>You have not registered!</h3><br>';
+                                echo '<a href ="register.html">Register here</a>';
+                            }
                             ?>
                         </div>
                     </div>
@@ -123,7 +121,8 @@
                         <a href="home.html">COVID-19 Info</a>
                     </td>
                     <td rowspan="5">
-                        <img src="images/connect_us.png" alt="Clipboard with checkmarks" class="card-img-top img-fluid p-0 bg-primary card-img-orig d-none d-md-block rounded-0">
+                        <img src="images/connect_us.png" alt="Clipboard with checkmarks" 
+                        class="card-img-top img-fluid p-0 bg-primary card-img-orig d-none d-md-block rounded-0">
                     </td>
                 </tr>
                 <tr>
