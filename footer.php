@@ -1,3 +1,4 @@
+<div>
 <?php
 
 echo "<div class ='container-fluid site-title footer'>
@@ -64,3 +65,4 @@ echo "<div class ='container-fluid site-title footer'>
 </div>"
 
 ?>
+</div>
