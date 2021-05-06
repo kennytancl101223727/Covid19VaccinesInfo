@@ -22,7 +22,8 @@ echo "<div class ='container-fluid site-title footer'>
                 <a href='home.html'>COVID-19 Info</a>
             </td>
             <td rowspan='5'>
-                <img src='images/connect_us.png' alt='Clipboard with checkmarks' class='card-img-top img-fluid p-0 bg-primary card-img-orig d-none d-md-block rounded-0'>
+                <img src='images/connect_us.png' alt='Clipboard with checkmarks' 
+                class='card-img-top img-fluid p-0 bg-primary card-img-orig d-none d-md-block rounded-0'>
             </td>
         </tr>
         <tr>
