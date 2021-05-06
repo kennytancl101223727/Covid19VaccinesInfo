@@ -54,7 +54,7 @@ echo "<div class ='container-fluid site-title footer'>
                 Locate Us
             </td>
             <td>
-                <a href='page3.html'>Sputnik</a>
+                <a href='page4.html'>Sputnik</a>
             </td>
         </tr>
     </table>
